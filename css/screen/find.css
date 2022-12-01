@@ -1,0 +1,120 @@
+
+.recommended-friends {
+    padding: 25px 0px;
+    margin: 25px 0px;
+    border-top: var(--main-border);  
+    border-bottom: var(--main-border);  
+}
+
+.recommended-friends__title {
+    font-size: 14px;
+    color: var(--gray-font-color);
+}
+
+.recommended-friends span {
+    display: block;
+    margin: 100px 0 ;
+    text-align: center;
+    font-size: 18px;
+    color: var(--gray-font-color);
+}
+
+.open_chat__header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-font-color);
+    margin-bottom: 25px;
+}
+
+.open_post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open_post_title {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.open_post_hastag {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.open_post_members {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.open_post_members img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open_post_member__count {
+    font-size: 14px;
+    color: var(--gray-font-color);
+}
+
+.open_post_members .divider {
+    width: 2px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0px 5px;
+}
+
+.open_post_member__status {
+    color: #ffb0e0;
+}
+
+.open_post__photo {
+    position: relative;
+}
+
+.open_post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.open_post__heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.open_post__heart-count span {
+    margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0% {
+    color: white;
+    transform: none;
+    }
+    50% {
+    color: tomato;
+    transform: scale(1.5);
+    }
+    100% {
+    color: white;
+    transform: none;
+
+    }
+}
+
+.open_post__heart-count:hover i {
+    will-change: tranform;
+    animation: heartBeat 1s linear infinite;
+}
